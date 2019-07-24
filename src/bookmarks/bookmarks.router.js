@@ -64,16 +64,17 @@ bookmarksRouter
   .route('/:id')
   .get((req, res) => {
     const { id } = req.params;
-    const bookmark = bookmarks.find(b => b.id === id);
+    BookmarksService.getById(req.app.get('db'), id)
+      .then(bookmark => {
+        if (bookmark[0] === undefined) {
+          logger.error(`Bookmark with id ${id} not fount`);
+          return res
+            .status(404)
+            .send('Card Not Fount');
+        }
 
-    if (!bookmark) {
-      logger.error(`Bookmark with id ${id} not fount`);
-      return res
-        .status(404)
-        .send('Card Not Fount');
-    }
-
-    res.json(bookmark);
+        res.json(bookmark);
+      });
   })
   .delete((req, res) => {
     const { id } = req.params;
