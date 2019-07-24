@@ -4,9 +4,7 @@ const BookmarksService = {
   },
 
   getById(db, id) {
-    return db('bookmarks').select('*').where('id', id)
-      .catch(err => console.error(err.message))
-      .finally( () => db.destroy());
+    return db('bookmarks').select('*').where('id', id);
   }
 };
 

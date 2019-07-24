@@ -47,7 +47,7 @@ describe('Bookmarks Endpoints', function() {
 
   describe('GET /bookmarks/:id', () => {
     context('Given no bookmarks', () => {
-      it.only('returns a 404', () => {
+      it('returns a 404', () => {
         return supertest(app)
           .get('/bookmarks/1aaca0ef-1594-4cb7-b26e-dc60fc7afceb')
           .set('Authorization', 'bearer ' + process.env.API_TOKEN)
