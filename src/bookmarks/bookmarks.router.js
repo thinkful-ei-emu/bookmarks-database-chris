@@ -1,21 +1,32 @@
 const express = require('express');
 const uuid = require('uuid/v4');
+const xss = require('xss');
 
 const logger = require('../logger');
 const BookmarksService = require('../bookmarks-service');
 
 const bookmarksRouter = express.Router();
+const jsonParser = express.json();
+
+const serializeBookmark = bookmark => ({
+  id: bookmark.id,
+  title: xss(bookmark.title),
+  url: xss(bookmark.url),
+  description: xss(bookmark.description),
+  rating: bookmark.rating
+});
 
 bookmarksRouter
   .route('/')
-  .get((req, res) => {
+  .get((req, res, next) => {
     const knexInstance = req.app.get('db');
     BookmarksService.getAllBookmarks(knexInstance)
-      .then(bookmarks => res.json(bookmarks));
+      .then(bookmarks => res.json(bookmarks.map(serializeBookmark)))
+      .catch(next);
   })
-  .post((req,res) => {
+  .post(jsonParser, (req,res, next) => {
     const { title, url, description = '', rating } = req.body;
-
+    console.log(title, url, description, rating);
     if (!title) {
       logger.error('Title is reqired');
       return res
@@ -26,7 +37,7 @@ bookmarksRouter
       logger.error('Url is reqired');
       return res
         .status(404)
-        .status('Invalid data');
+        .send('Invalid data');
     }
     if(!rating){
       logger.error('Rating is reqired');
@@ -60,8 +71,9 @@ bookmarksRouter
         res
           .status(201)
           .location(`/bookmarks/${bookmark.id}`)
-          .json(bookmark);
-      });
+          .json(serializeBookmark(bookmark));
+      })
+      .catch(next);
   });
 
 bookmarksRouter
@@ -85,7 +97,7 @@ bookmarksRouter
       .catch(next);
   })
   .get((req, res) => {
-    res.json(res.bookmark);
+    res.json(serializeBookmark(res.bookmark));
   })
   .delete((req, res, next) => {
     const { id } = req.params;

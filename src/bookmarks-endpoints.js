@@ -16,10 +16,11 @@ describe('Bookmarks Endpoints', function() {
   after('disconect from db', () => db.destroy());
   before('clean the table', () => db('bookmarks').truncate());
   afterEach('cleanup', () => db('bookmarks').truncate());
+  // beforeEach('clean the table', () => db('bookmarks').truncate());
 
   describe('GET /bookmarks', () => {
     context('Given no bookmarks', () => {
-      it('responds with 200 and an empty list', () => {
+      it.only('responds with 200 and an empty list', () => {
         return supertest(app)
           .get('/bookmarks')
           .set('Authorization', 'bearer ' + process.env.API_TOKEN)
@@ -97,7 +98,6 @@ describe('Bookmarks Endpoints', function() {
           expect(res.headers.location).to.eql(`/bookmarks/${res.body.id}`);
         })
         .then(postRes => {
-          console.log(postRes.body);
           supertest(app)
             .get(`/bookmarks/${postRes.body.id}`)
             .expect(201);
