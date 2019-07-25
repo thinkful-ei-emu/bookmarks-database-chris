@@ -1,4 +1,3 @@
-
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
@@ -34,7 +33,7 @@ app.get('/', (req, res) => {
   res.send('Hello, Bookmarks App!');
 });
 
-app.use('/bookmarks', bookmarksRouter);
+app.use('/api/bookmarks', bookmarksRouter);
 
 app.use(function errorHandler(error, req, res, next) {
   let response;

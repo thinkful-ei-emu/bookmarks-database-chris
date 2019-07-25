@@ -15,6 +15,11 @@ const BookmarksService = {
     return db('bookmarks')
       .where({ id })
       .delete();
+  },
+  updateBookmark(db, id, newBookmarkFields) {
+    return db('bookmarks')
+      .where({ id })
+      .update(newBookmarkFields);
   }
 };
 

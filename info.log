@@ -244,3 +244,59 @@
 {"message":"Title is reqired","level":"error"}
 {"message":"Url is reqired","level":"error"}
 {"message":"Rating is reqired","level":"error"}
+{"message":"Bookmark with id 1aaca0ef-1594-4cb7-b26e-dc60fc7afceb not found","level":"error"}
+{"message":"Bookmark with id e4f4d1d7-5243-4cf5-8142-183eea2899b4 created","level":"info"}
+{"message":"Bookmark with id e2f59cfe-b385-4ef0-a301-38116ca3e4bf created","level":"info"}
+{"message":"Title is reqired","level":"error"}
+{"message":"Url is reqired","level":"error"}
+{"message":"Rating is reqired","level":"error"}
+{"message":"Bookmark with id 1aaca0ef-1594-4cb7-b26e-dc60fc7afceb not found","level":"error"}
+{"message":"Bookmark with id 5b545cc1-933b-4eda-9206-6c9729feab17 created","level":"info"}
+{"message":"Bookmark with id 06c89026-a50a-4c3e-bdff-1da7b6ef9c26 created","level":"info"}
+{"message":"Title is reqired","level":"error"}
+{"message":"Url is reqired","level":"error"}
+{"message":"Rating is reqired","level":"error"}
+{"message":"Bookmark with id 1aaca0ef-1594-4cb7-b26e-dc60fc7afceb not found","level":"error"}
+{"message":"Bookmark with id 1b0a4ec4-ab29-41db-8791-3816e64fc4f4 created","level":"info"}
+{"message":"Bookmark with id 9083cb0f-2de9-4a6e-9e89-1c4ced728905 created","level":"info"}
+{"message":"Title is reqired","level":"error"}
+{"message":"Url is reqired","level":"error"}
+{"message":"Rating is reqired","level":"error"}
+{"message":"Bookmark with id 1aaca0ef-1594-4cb7-b26e-dc60fc7afceb not found","level":"error"}
+{"message":"Bookmark with id 84707632-4876-410c-bf5c-87bfb3676e53 created","level":"info"}
+{"message":"Bookmark with id dd724289-aa67-491b-8ff7-46cbd2e09bbf created","level":"info"}
+{"message":"Title is reqired","level":"error"}
+{"message":"Url is reqired","level":"error"}
+{"message":"Rating is reqired","level":"error"}
+{"message":"Bookmark with id 1aaca0ef-1594-4cb7-b26e-dc60fc7afceb not found","level":"error"}
+{"message":"Bookmark with id e56833b9-f1ff-4d9e-ae1c-0e9173fdeb16 created","level":"info"}
+{"message":"Bookmark with id 76232b13-5b4f-4797-8454-d6950e38b072 created","level":"info"}
+{"message":"Title is reqired","level":"error"}
+{"message":"Url is reqired","level":"error"}
+{"message":"Rating is reqired","level":"error"}
+{"message":"Bookmark with id db42f1a2-13d2-443d-a0d2-f2eb7e4cc77e not found","level":"error"}
+{"message":"Bookmark with id db42f1a2-13d2-443d-a0d2-f2eb7e4cc77e not found","level":"error"}
+{"message":"Bookmark with id db42f1a2-13d2-443d-a0d2-f2eb7e4cc77e not found","level":"error"}
+{"message":"Bookmark with id db42f1a2-13d2-443d-a0d2-f2eb7e4cc77e not found","level":"error"}
+{"message":"Bookmark with id db42f1a2-13d2-443d-a0d2-f2eb7e4cc77e not found","level":"error"}
+{"message":"Bookmark with id db42f1a2-13d2-443d-a0d2-f2eb7e4cc77e not found","level":"error"}
+{"message":"Bookmark with id db42f1a2-13d2-443d-a0d2-f2eb7e4cc77e not found","level":"error"}
+{"message":"Bookmark with id db42f1a2-13d2-443d-a0d2-f2eb7e4cc77e not found","level":"error"}
+{"message":"Bookmark with id db42f1a2-13d2-443d-a0d2-f2eb7e4cc77e not found","level":"error"}
+{"message":"Bookmark with id db42f1a2-13d2-443d-a0d2-f2eb7e4cc77e not found","level":"error"}
+{"message":"Bookmark with id db42f1a2-13d2-443d-a0d2-f2eb7e4cc77e not found","level":"error"}
+{"message":"Bookmark with id db42f1a2-13d2-443d-a0d2-f2eb7e4cc77e not found","level":"error"}
+{"message":"Bookmark with id db42f1a2-13d2-443d-a0d2-f2eb7e4cc77e not found","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks/db42f1a2-13d2-443d-a0d2-f2eb7e4cc77e","level":"error"}
+{"message":"Bookmark with id db42f1a2-13d2-443d-a0d2-f2eb7e4cc77e not found","level":"error"}
+{"message":"Bookmark with id db42f1a2-13d2-443d-a0d2-f2eb7e4cc77e not found","level":"error"}
+{"message":"Bookmark with id db42f1a2-13d2-443d-a0d2-f2eb7e4cc77e not found","level":"error"}
+{"message":"Bookmark with id db42f1a2-13d2-443d-a0d2-f2eb7e4cc77e not found","level":"error"}
+{"message":"Bookmark with id db42f1a2-13d2-443d-a0d2-f2eb7e4cc77e not found","level":"error"}
+{"message":"Bookmark with id db42f1a2-13d2-443d-a0d2-f2eb7e4cc77e not found","level":"error"}
+{"message":"Bookmark with id abf5c5c2-f255-4b00-b2c3-16eccd37842b created","level":"info"}
+{"message":"Bookmark with id aa01ba13-62fb-40e0-8f22-03a2e22d98d5 not found","level":"error"}
+{"message":"Bookmark with id aa01ba13-62fb-40e0-8f22-03a2e22d98d5 not found","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks/fb416f6f-0b24-4546-a347-db3bc279ea01","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks/fb416f6f-0b24-4546-a347-db3bc279ea01","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks/fb416f6f-0b24-4546-a347-db3bc279ea01","level":"error"}
